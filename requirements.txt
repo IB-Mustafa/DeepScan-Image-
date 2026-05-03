@@ -1,0 +1,9 @@
+customtkinter==5.2.2
+Pillow==10.2.0
+numpy==1.26.4
+scipy==1.13.0
+nudenet==3.4.2
+torch==2.2.2
+torchvision==0.17.2
+facenet-pytorch==2.6.0
+opencv-python==4.7.0.72

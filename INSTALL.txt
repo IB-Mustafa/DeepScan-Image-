@@ -1,0 +1,26 @@
+# DeepScanAI — Setup (100% Free, No API Key Needed)
+
+# ── Core UI ───────────────────────────────────────────────
+pip install customtkinter pillow
+
+# ── Sensitive content (nudity, weapons, blood) ────────────
+pip install nudenet
+
+# ── Scientific computing (for AI detection signals) ───────
+pip install numpy scipy
+
+# ── OPTIONAL: Better deepfake face detection ──────────────
+pip install facenet-pytorch
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# ─────────────────────────────────────────────────────────
+# Run the app:
+#   python main.py
+#
+# No API key needed! AI detection uses 5 forensic signals:
+#   • EXIF metadata analysis
+#   • Frequency domain (FFT) analysis  
+#   • JPEG compression history (ELA)
+#   • Camera sensor noise pattern
+#   • Chromatic aberration detection
+# ─────────────────────────────────────────────────────────
