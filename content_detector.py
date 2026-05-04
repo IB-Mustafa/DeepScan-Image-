@@ -53,16 +53,9 @@ except ImportError:
     CV2_OK = False
     print("[content_detector] OpenCV not available — visual detection disabled")
 
-# ── Nnet — content safety classifier ─────────────────────────────────────────
-try:
-    from nudenet import NudeDetector as _NnetDetector
-    _nnet = _NnetDetector()
-    NNET_OK = True
-    print("[content_detector] ✓ Nnet loaded")
-except Exception as e:
-    print(f"[content_detector] Nnet unavailable: {e}")
-    _nnet = None
-    NNET_OK = False
+# ── Nnet — content safety classifier (loaded via _flagged_labels) ─────────────
+_nnet  = _FL.nnet_instance
+NNET_OK = _FL.NNET_AVAILABLE
 
 _NNET_MAP = {
     "GUN_POINTED":              ("Restricted Item",  "Firearm — Directed at Subject",     65.0),

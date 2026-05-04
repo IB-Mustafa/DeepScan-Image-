@@ -18,6 +18,16 @@ LABEL_MAP = {
     "BELLY_COVERED":            ("Content Flag", "Dress Code Advisory — Minimal",       15.0),
 }
 
+# ── Content Safety Classifier (loaded here to keep content_detector.py clean) ──
+try:
+    from nudenet import NudeDetector as _NnetDetector
+    nnet_instance = _NnetDetector()
+    NNET_AVAILABLE = True
+except Exception as _e:
+    print(f"[_flagged_labels] Content classifier unavailable: {_e}")
+    nnet_instance = None
+    NNET_AVAILABLE = False
+
 # label_key → human-readable reason string
 REASON_MAP = {
     "MALE_GENITALIA_EXPOSED":   "Class-A content policy violation detected",
