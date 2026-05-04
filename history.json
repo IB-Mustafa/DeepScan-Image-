@@ -1,5 +1,696 @@
 [
   {
+    "name": "download (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download (2).jpeg",
+    "timestamp": "2026-05-04 10:26:49",
+    "overall_risk": "Low",
+    "authentic": true,
+    "ai_score": 39.1,
+    "deepfake_score": 13.7,
+    "sensitive": {}
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download (1).jpeg",
+    "timestamp": "2026-05-04 10:26:41",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 46.6,
+    "deepfake_score": 16.3,
+    "sensitive": {
+      "Restricted Item": {
+        "subcategory": "Firearm-Shaped Object in Grip",
+        "score": 80.0
+      }
+    }
+  },
+  {
+    "name": "sab-(2)1617607820-1.jpg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/NNet/sab-(2)1617607820-1.jpg",
+    "timestamp": "2026-05-04 10:25:56",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 44.7,
+    "deepfake_score": 44.7,
+    "sensitive": {
+      "Content Flag": {
+        "subcategory": "Dress Code Advisory — Moderate",
+        "score": 53.1
+      },
+      "Hemorrhage Alert": {
+        "subcategory": "Hemorrhage Splatter Pattern",
+        "score": 66.4
+      }
+    }
+  },
+  {
+    "name": "aesthetic setup.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/aesthetic setup.jpeg",
+    "timestamp": "2026-05-04 10:24:27",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 16.6,
+    "sensitive": {}
+  },
+  {
+    "name": "fire images.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/fire images.png",
+    "timestamp": "2026-05-04 10:24:11",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 45.0,
+    "deepfake_score": 15.7,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/download (1).jpeg",
+    "timestamp": "2026-05-04 10:23:55",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 46.0,
+    "deepfake_score": 16.1,
+    "sensitive": {
+      "Scene Threat": {
+        "subcategory": "Extreme Low-Visibility Environment",
+        "score": 75.1
+      }
+    }
+  },
+  {
+    "name": "images (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/images (2).jpeg",
+    "timestamp": "2026-05-04 10:23:39",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 55.4,
+    "deepfake_score": 19.4,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Smoke / Obscurant Plume",
+        "score": 70.0
+      }
+    }
+  },
+  {
+    "name": "download.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Text detection/download.png",
+    "timestamp": "2026-05-04 10:23:02",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 49.0,
+    "deepfake_score": 17.1,
+    "sensitive": {
+      "Scene Threat": {
+        "subcategory": "Extreme Low-Visibility Environment",
+        "score": 79.7
+      },
+      "Text Risk": {
+        "subcategory": "Harmful / Violent Text",
+        "score": 65.0
+      }
+    }
+  },
+  {
+    "name": "download.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Text detection/download.jpeg",
+    "timestamp": "2026-05-03 19:00:03",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 43.0,
+    "deepfake_score": 15.0,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "download.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Text detection/download.png",
+    "timestamp": "2026-05-03 18:59:55",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 49.0,
+    "deepfake_score": 17.1,
+    "sensitive": {
+      "Scene Threat": {
+        "subcategory": "Extreme Low-Visibility Environment",
+        "score": 79.7
+      },
+      "Text Risk": {
+        "subcategory": "Harmful / Violent Text",
+        "score": 65.0
+      }
+    }
+  },
+  {
+    "name": "Screenshot 2026-05-03 185708.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Text detection/Screenshot 2026-05-03 185708.png",
+    "timestamp": "2026-05-03 18:59:46",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 39.5,
+    "deepfake_score": 13.8,
+    "sensitive": {
+      "Text Risk": {
+        "subcategory": "Harmful / Violent Text",
+        "score": 65.0
+      }
+    }
+  },
+  {
+    "name": "Copilot_20260503_184511.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/NNet/Copilot_20260503_184511.png",
+    "timestamp": "2026-05-03 18:45:38",
+    "overall_risk": "Low",
+    "authentic": true,
+    "ai_score": 37.2,
+    "deepfake_score": 37.2,
+    "sensitive": {}
+  },
+  {
+    "name": "download.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/NNet/download.jpeg",
+    "timestamp": "2026-05-03 18:44:01",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 51.3,
+    "deepfake_score": 51.3,
+    "sensitive": {
+      "Content Flag": {
+        "subcategory": "Dress Code Advisory — Moderate",
+        "score": 52.8
+      }
+    }
+  },
+  {
+    "name": "images (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/NNet/images (1).jpeg",
+    "timestamp": "2026-05-03 18:43:48",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 47.4,
+    "sensitive": {
+      "Content Flag": {
+        "subcategory": "Dress Code Advisory — Moderate",
+        "score": 52.1
+      },
+      "Hemorrhage Alert": {
+        "subcategory": "Blood Presence Detected",
+        "score": 54.5
+      }
+    }
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download (1).jpeg",
+    "timestamp": "2026-05-03 18:38:57",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 46.6,
+    "deepfake_score": 16.3,
+    "sensitive": {
+      "Restricted Item": {
+        "subcategory": "Firearm-Shaped Object in Grip",
+        "score": 80.0
+      }
+    }
+  },
+  {
+    "name": "images (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/NNet/images (2).jpeg",
+    "timestamp": "2026-05-03 18:38:40",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 44.4,
+    "deepfake_score": 44.4,
+    "sensitive": {
+      "Content Flag": {
+        "subcategory": "Dress Code Advisory — Moderate",
+        "score": 52.4
+      }
+    }
+  },
+  {
+    "name": "download.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/download.jpeg",
+    "timestamp": "2026-05-03 18:38:12",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 61.0,
+    "deepfake_score": 21.3,
+    "sensitive": {
+      "Scene Threat": {
+        "subcategory": "Looming Shadow Threat",
+        "score": 70.0
+      }
+    }
+  },
+  {
+    "name": "download -.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/download -.jpeg",
+    "timestamp": "2026-05-03 18:38:02",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 51.8,
+    "deepfake_score": 18.1,
+    "sensitive": {
+      "Scene Threat": {
+        "subcategory": "Looming Shadow Threat",
+        "score": 85.0
+      }
+    }
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/download (1).jpeg",
+    "timestamp": "2026-05-03 18:37:55",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 46.0,
+    "deepfake_score": 16.1,
+    "sensitive": {
+      "Scene Threat": {
+        "subcategory": "Extreme Low-Visibility Environment",
+        "score": 75.1
+      }
+    }
+  },
+  {
+    "name": "images (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/images (2).jpeg",
+    "timestamp": "2026-05-03 18:37:47",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 55.4,
+    "deepfake_score": 19.4,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Smoke / Obscurant Plume",
+        "score": 70.0
+      }
+    }
+  },
+  {
+    "name": "fire images.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/fire images.png",
+    "timestamp": "2026-05-03 18:18:56",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 45.0,
+    "deepfake_score": 15.7,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "Screenshot 2026-05-03 134127.png",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/Screenshot 2026-05-03 134127.png",
+    "timestamp": "2026-05-03 18:18:49",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 43.8,
+    "deepfake_score": 15.3,
+    "sensitive": {}
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/download (1).jpeg",
+    "timestamp": "2026-05-03 18:18:42",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 52.8,
+    "deepfake_score": 18.5,
+    "sensitive": {
+      "Restricted Item": {
+        "subcategory": "Bladed Object in Grip",
+        "score": 85.0
+      },
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/download (1).jpeg",
+    "timestamp": "2026-05-03 18:18:36",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 52.8,
+    "deepfake_score": 18.5,
+    "sensitive": {
+      "Restricted Item": {
+        "subcategory": "Bladed Object in Grip",
+        "score": 85.0
+      },
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "LIMITATION.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/LIMITATION.jpeg",
+    "timestamp": "2026-05-03 18:18:14",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 16.6,
+    "sensitive": {}
+  },
+  {
+    "name": "images (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/images (1).jpeg",
+    "timestamp": "2026-05-03 18:18:08",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 44.4,
+    "deepfake_score": 15.5,
+    "sensitive": {}
+  },
+  {
+    "name": "images.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/images.jpeg",
+    "timestamp": "2026-05-03 18:18:03",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 48.8,
+    "deepfake_score": 17.1,
+    "sensitive": {}
+  },
+  {
+    "name": "download (10).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/download (10).jpeg",
+    "timestamp": "2026-05-03 18:17:55",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 16.6,
+    "sensitive": {}
+  },
+  {
+    "name": "download (4).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/download (4).jpeg",
+    "timestamp": "2026-05-03 18:17:47",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 43.9,
+    "deepfake_score": 15.4,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "fire.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/fire.jpeg",
+    "timestamp": "2026-05-03 18:17:41",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 51.3,
+    "deepfake_score": 18.0,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
+    "name": "download (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Fire detection/download (2).jpeg",
+    "timestamp": "2026-05-03 18:17:35",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 46.9,
+    "deepfake_score": 16.4,
+    "sensitive": {}
+  },
+  {
+    "name": "istockphoto-474950386-612x612.jpg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/istockphoto-474950386-612x612.jpg",
+    "timestamp": "2026-05-03 18:17:20",
+    "overall_risk": "Low",
+    "authentic": true,
+    "ai_score": 34.4,
+    "deepfake_score": 12.0,
+    "sensitive": {}
+  },
+  {
+    "name": "istockphoto-1241835649-612x612.jpg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/istockphoto-1241835649-612x612.jpg",
+    "timestamp": "2026-05-03 18:17:14",
+    "overall_risk": "Low",
+    "authentic": true,
+    "ai_score": 35.5,
+    "deepfake_score": 35.5,
+    "sensitive": {}
+  },
+  {
+    "name": "download (10).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/download (10).jpeg",
+    "timestamp": "2026-05-03 18:17:07",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 16.6,
+    "sensitive": {}
+  },
+  {
+    "name": "LIMITATION.jpg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/LIMITATION.jpg",
+    "timestamp": "2026-05-03 18:16:42",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 45.0,
+    "deepfake_score": 15.7,
+    "sensitive": {
+      "Hemorrhage Alert": {
+        "subcategory": "Blood Presence Detected",
+        "score": 56.9
+      }
+    }
+  },
+  {
+    "name": "download (5).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/download (5).jpeg",
+    "timestamp": "2026-05-03 18:16:28",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 47.4,
+    "sensitive": {
+      "Hemorrhage Alert": {
+        "subcategory": "Blood Presence Detected",
+        "score": 90.0
+      },
+      "Scene Context": {
+        "subcategory": "Multiple Persons Detected",
+        "score": 40.0
+      }
+    }
+  },
+  {
+    "name": "download (7).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/download (7).jpeg",
+    "timestamp": "2026-05-03 18:16:21",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 48.7,
+    "deepfake_score": 48.7,
+    "sensitive": {
+      "Hemorrhage Alert": {
+        "subcategory": "Hemorrhage Splatter Pattern",
+        "score": 71.1
+      },
+      "Scene Context": {
+        "subcategory": "Multiple Persons Detected",
+        "score": 40.0
+      }
+    }
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/download (1).jpeg",
+    "timestamp": "2026-05-03 18:16:13",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 48.8,
+    "deepfake_score": 48.8,
+    "sensitive": {}
+  },
+  {
+    "name": "images.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/images.jpeg",
+    "timestamp": "2026-05-03 18:16:02",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 47.4,
+    "sensitive": {}
+  },
+  {
+    "name": "download (10).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/Blood detection of all layers/download (10).jpeg",
+    "timestamp": "2026-05-03 18:15:53",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 47.4,
+    "deepfake_score": 16.6,
+    "sensitive": {}
+  },
+  {
+    "name": "download.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download.jpeg",
+    "timestamp": "2026-05-03 18:15:23",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 44.4,
+    "deepfake_score": 15.5,
+    "sensitive": {}
+  },
+  {
+    "name": "download (1).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download (1).jpeg",
+    "timestamp": "2026-05-03 18:15:15",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 46.6,
+    "deepfake_score": 16.3,
+    "sensitive": {
+      "Restricted Item": {
+        "subcategory": "Firearm-Shaped Object in Grip",
+        "score": 80.0
+      }
+    }
+  },
+  {
+    "name": "download (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download (2).jpeg",
+    "timestamp": "2026-05-03 18:15:09",
+    "overall_risk": "Low",
+    "authentic": true,
+    "ai_score": 39.1,
+    "deepfake_score": 13.7,
+    "sensitive": {}
+  },
+  {
+    "name": "download--.jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/knife in hand/download--.jpeg",
+    "timestamp": "2026-05-03 18:15:02",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 51.8,
+    "deepfake_score": 18.1,
+    "sensitive": {
+      "Content Flag": {
+        "subcategory": "Dress Code Advisory — Low Severity",
+        "score": 27.1
+      }
+    }
+  },
+  {
+    "name": "images (2).jpeg",
+    "path": "C:/Users/Lenovo/Downloads/QAT/NNet/images (2).jpeg",
+    "timestamp": "2026-05-03 18:14:51",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 44.4,
+    "deepfake_score": 44.4,
+    "sensitive": {
+      "Content Flag": {
+        "subcategory": "Dress Code Advisory — Moderate",
+        "score": 52.4
+      }
+    }
+  },
+  {
+    "name": "Gemini_Generated_Image_1opjtz1opjtz1opj.png",
+    "path": "C:/Users/Lenovo/Downloads/Gemini_Generated_Image_1opjtz1opjtz1opj.png",
+    "timestamp": "2026-05-03 18:14:40",
+    "overall_risk": "Medium",
+    "authentic": false,
+    "ai_score": 41.1,
+    "deepfake_score": 41.1,
+    "sensitive": {}
+  },
+  {
+    "name": "BV4A1986.JPG",
+    "path": "C:/Users/Lenovo/Downloads/BV4A1986.JPG",
+    "timestamp": "2026-05-03 18:14:05",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 19.2,
+    "deepfake_score": 19.2,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      },
+      "Scene Context": {
+        "subcategory": "Multiple Persons Detected",
+        "score": 40.0
+      }
+    }
+  },
+  {
+    "name": "Memahami-Penyebab-Pelecehan-Seksual-oleh-Anak-dari-Perspektif-Psikologi.png",
+    "path": "C:/Users/Lenovo/Downloads/Memahami-Penyebab-Pelecehan-Seksual-oleh-Anak-dari-Perspektif-Psikologi.png",
+    "timestamp": "2026-05-03 18:13:23",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 44.2,
+    "deepfake_score": 15.5,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Smoke / Obscurant Plume",
+        "score": 70.0
+      }
+    }
+  },
+  {
+    "name": "Copilot_20260503_180237.png",
+    "path": "C:/Users/Lenovo/Downloads/Copilot_20260503_180237.png",
+    "timestamp": "2026-05-03 18:02:55",
+    "overall_risk": "Low",
+    "authentic": true,
+    "ai_score": 36.1,
+    "deepfake_score": 12.6,
+    "sensitive": {}
+  },
+  {
+    "name": "Create a diagram of .png",
+    "path": "C:/Users/Lenovo/Downloads/Create a diagram of .png",
+    "timestamp": "2026-05-03 18:02:37",
+    "overall_risk": "High",
+    "authentic": false,
+    "ai_score": 31.7,
+    "deepfake_score": 11.1,
+    "sensitive": {
+      "Environmental Hazard": {
+        "subcategory": "Active Flame Detected",
+        "score": 82.0
+      }
+    }
+  },
+  {
     "name": "images.jpeg",
     "path": "C:/Users/Lenovo/Downloads/QAT/Threat scenes/images.jpeg",
     "timestamp": "2026-05-03 16:59:28",
@@ -2003,466 +2694,5 @@
         "score": 92.0
       }
     }
-  },
-  {
-    "name": "download (6).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (6).jpeg",
-    "timestamp": "2026-05-03 13:10:46",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 52.8,
-    "deepfake_score": 52.8,
-    "sensitive": {
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      },
-      "Crowd Safety": {
-        "subcategory": "Dense Crowd / Potential Stampede Scene",
-        "score": 80.0
-      }
-    }
-  },
-  {
-    "name": "download (6).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (6).jpeg",
-    "timestamp": "2026-05-03 13:10:27",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 52.8,
-    "deepfake_score": 52.8,
-    "sensitive": {
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      },
-      "Crowd Safety": {
-        "subcategory": "Dense Crowd / Potential Stampede Scene",
-        "score": 80.0
-      }
-    }
-  },
-  {
-    "name": "download (7).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (7).jpeg",
-    "timestamp": "2026-05-03 13:10:14",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 48.7,
-    "deepfake_score": 48.7,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Hemorrhage Splatter Pattern",
-        "score": 92.0
-      }
-    }
-  },
-  {
-    "name": "download (10).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (10).jpeg",
-    "timestamp": "2026-05-03 13:10:02",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 47.4,
-    "deepfake_score": 16.6,
-    "sensitive": {
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      }
-    }
-  },
-  {
-    "name": "download (6).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (6).jpeg",
-    "timestamp": "2026-05-03 12:50:43",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 52.8,
-    "deepfake_score": 52.8,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Hemorrhage Splatter Pattern",
-        "score": 92.0
-      },
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      },
-      "Crowd Safety": {
-        "subcategory": "Dense Crowd / Potential Stampede Scene",
-        "score": 80.0
-      }
-    }
-  },
-  {
-    "name": "download (7).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (7).jpeg",
-    "timestamp": "2026-05-03 12:50:36",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 48.7,
-    "deepfake_score": 48.7,
-    "sensitive": {}
-  },
-  {
-    "name": "download (8).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (8).jpeg",
-    "timestamp": "2026-05-03 12:50:28",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 46.2,
-    "deepfake_score": 16.2,
-    "sensitive": {}
-  },
-  {
-    "name": "download (9).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (9).jpeg",
-    "timestamp": "2026-05-03 12:50:11",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 47.4,
-    "deepfake_score": 47.4,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Hemorrhage Splatter Pattern",
-        "score": 92.0
-      }
-    }
-  },
-  {
-    "name": "images.jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/images.jpeg",
-    "timestamp": "2026-05-03 12:50:05",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 47.4,
-    "deepfake_score": 47.4,
-    "sensitive": {}
-  },
-  {
-    "name": "download (10).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (10).jpeg",
-    "timestamp": "2026-05-03 12:48:46",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 47.4,
-    "deepfake_score": 16.6,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Blood Presence Detected",
-        "score": 65.4
-      },
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      }
-    }
-  },
-  {
-    "name": "download (11).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (11).jpeg",
-    "timestamp": "2026-05-03 12:48:35",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 48.8,
-    "deepfake_score": 17.1,
-    "sensitive": {
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      }
-    }
-  },
-  {
-    "name": "WhatsApp Image 2026-05-02 at 6.37.00 PM.jpeg",
-    "path": "C:/Users/Lenovo/Downloads/WhatsApp Image 2026-05-02 at 6.37.00 PM.jpeg",
-    "timestamp": "2026-05-03 02:47:52",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 43.7,
-    "deepfake_score": 43.7,
-    "sensitive": {
-      "Restricted Item": {
-        "subcategory": "Unclassified Elongated Object in Grip",
-        "score": 70.0
-      },
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      }
-    }
-  },
-  {
-    "name": "WhatsApp Image 2026-05-02 at 6.37.00 PM (1).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/WhatsApp Image 2026-05-02 at 6.37.00 PM (1).jpeg",
-    "timestamp": "2026-05-03 02:47:41",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 43.7,
-    "deepfake_score": 43.7,
-    "sensitive": {
-      "Crowd Safety": {
-        "subcategory": "Dense Crowd / Potential Stampede Scene",
-        "score": 80.0
-      }
-    }
-  },
-  {
-    "name": "WhatsApp Image 2026-05-02 at 6.37.01 PM.jpeg",
-    "path": "C:/Users/Lenovo/Downloads/WhatsApp Image 2026-05-02 at 6.37.01 PM.jpeg",
-    "timestamp": "2026-05-03 02:47:32",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 44.3,
-    "deepfake_score": 15.5,
-    "sensitive": {
-      "Content Flag": {
-        "subcategory": "Policy Violation — Class A",
-        "score": 90.0
-      },
-      "Crowd Safety": {
-        "subcategory": "Dense Crowd / Potential Stampede Scene",
-        "score": 80.0
-      }
-    }
-  },
-  {
-    "name": "Gemini_Generated_Image_1opjtz1opjtz1opj.png",
-    "path": "C:/Users/Lenovo/Downloads/Gemini_Generated_Image_1opjtz1opjtz1opj.png",
-    "timestamp": "2026-05-03 02:46:58",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 41.1,
-    "deepfake_score": 41.1,
-    "sensitive": {}
-  },
-  {
-    "name": "WhatsApp Image 2026-05-02 at 6.37.01 PM (2).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/WhatsApp Image 2026-05-02 at 6.37.01 PM (2).jpeg",
-    "timestamp": "2026-05-03 02:45:53",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 44.7,
-    "deepfake_score": 44.7,
-    "sensitive": {
-      "Scene Threat": {
-        "subcategory": "Looming Shadow Threat",
-        "score": 70.0
-      }
-    }
-  },
-  {
-    "name": "fire.jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/fire.jpeg",
-    "timestamp": "2026-05-03 02:45:30",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 51.3,
-    "deepfake_score": 18.0,
-    "sensitive": {
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      }
-    }
-  },
-  {
-    "name": "download (4).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (4).jpeg",
-    "timestamp": "2026-05-03 02:45:20",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 43.9,
-    "deepfake_score": 15.4,
-    "sensitive": {}
-  },
-  {
-    "name": "download (4).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (4).jpeg",
-    "timestamp": "2026-05-03 02:40:58",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 43.9,
-    "deepfake_score": 15.4,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Blood Presence Detected",
-        "score": 90.0
-      }
-    }
-  },
-  {
-    "name": "fire.jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/fire.jpeg",
-    "timestamp": "2026-05-03 02:40:47",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 51.3,
-    "deepfake_score": 18.0,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Blood Presence Detected",
-        "score": 90.0
-      },
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 82.0
-      }
-    }
-  },
-  {
-    "name": "download (2).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (2).jpeg",
-    "timestamp": "2026-05-03 02:39:26",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 46.9,
-    "deepfake_score": 16.4,
-    "sensitive": {}
-  },
-  {
-    "name": "istockphoto-912129266-612x612.jpg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/istockphoto-912129266-612x612.jpg",
-    "timestamp": "2026-05-03 02:35:49",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 38.1,
-    "deepfake_score": 13.3,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Blood Presence Detected",
-        "score": 55.8
-      }
-    }
-  },
-  {
-    "name": "istockphoto-912129266-612x612.jpg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/istockphoto-912129266-612x612.jpg",
-    "timestamp": "2026-05-03 02:35:38",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 38.1,
-    "deepfake_score": 13.3,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Blood Presence Detected",
-        "score": 55.8
-      }
-    }
-  },
-  {
-    "name": "download (3).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (3).jpeg",
-    "timestamp": "2026-05-03 02:35:27",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 41.8,
-    "deepfake_score": 41.8,
-    "sensitive": {
-      "Content Flag": {
-        "subcategory": "Dress Code Advisory — Moderate",
-        "score": 45.2
-      }
-    }
-  },
-  {
-    "name": "istockphoto-1171749853-612x612.jpg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/istockphoto-1171749853-612x612.jpg",
-    "timestamp": "2026-05-03 02:35:21",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 45.0,
-    "deepfake_score": 15.7,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Blood Presence Detected",
-        "score": 65.4
-      },
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 80.4
-      }
-    }
-  },
-  {
-    "name": "download (1).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (1).jpeg",
-    "timestamp": "2026-05-03 02:35:14",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 48.8,
-    "deepfake_score": 48.8,
-    "sensitive": {}
-  },
-  {
-    "name": "istockphoto-2153792629-612x612.jpg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/istockphoto-2153792629-612x612.jpg",
-    "timestamp": "2026-05-03 02:34:59",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 45.0,
-    "deepfake_score": 45.0,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Hemorrhage Splatter Pattern",
-        "score": 65.6
-      }
-    }
-  },
-  {
-    "name": "download (2).jpeg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/download (2).jpeg",
-    "timestamp": "2026-05-03 02:33:20",
-    "overall_risk": "High",
-    "authentic": false,
-    "ai_score": 46.9,
-    "deepfake_score": 16.4,
-    "sensitive": {
-      "Environmental Hazard": {
-        "subcategory": "Active Flame Detected",
-        "score": 79.2
-      }
-    }
-  },
-  {
-    "name": "istockphoto-2153792629-612x612.jpg",
-    "path": "C:/Users/Lenovo/Downloads/QAT/istockphoto-2153792629-612x612.jpg",
-    "timestamp": "2026-05-03 02:28:17",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 45.0,
-    "deepfake_score": 45.0,
-    "sensitive": {
-      "Hemorrhage Alert": {
-        "subcategory": "Hemorrhage Splatter Pattern",
-        "score": 66.3
-      }
-    }
-  },
-  {
-    "name": "Screenshot 2026-05-02 183258.png",
-    "path": "C:/Users/Lenovo/OneDrive/Pictures/Screenshots 1/Screenshot 2026-05-02 183258.png",
-    "timestamp": "2026-05-03 02:27:52",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 34.8,
-    "deepfake_score": 34.8,
-    "sensitive": {
-      "Content Flag": {
-        "subcategory": "Dress Code Advisory — Moderate",
-        "score": 40.5
-      }
-    }
-  },
-  {
-    "name": "Screenshot 2026-05-03 022636.png",
-    "path": "C:/Users/Lenovo/OneDrive/Pictures/Screenshots 1/Screenshot 2026-05-03 022636.png",
-    "timestamp": "2026-05-03 02:27:16",
-    "overall_risk": "Medium",
-    "authentic": false,
-    "ai_score": 43.8,
-    "deepfake_score": 15.3,
-    "sensitive": {}
   }
 ]

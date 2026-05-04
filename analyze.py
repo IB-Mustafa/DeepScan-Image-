@@ -41,14 +41,25 @@ RISK_COLOR = {
 }
 
 CATEGORY_ICON = {
-    "Restricted Item":      "🔒",
-    "Hemorrhage Alert":     "🩸",
-    "Physical Trauma":      "🩹",
-    "Scene Threat":         "🌑",
-    "Environmental Hazard": "🔥",
-    "Hazmat Indicator":     "☢️",
-    "Crowd Safety":         "🚨",
-    "Clinical Content":     "🏥",
+    "Unacceptable Exposure": "🔞",
+    "Suggestive Content":    "⚠️",
+    "PartialExposure":       "  ",
+    "Blood / Injury":        "🩸",
+    "Weapons":               "🔫",
+    "Medical Content":       "🏥",
+    "Distress / Threat":     "🚨",
+}
+
+CATEGORY_LABEL = {
+    "Restricted Item":      "Weapon Detected",
+    "Hemorrhage Alert":     "Blood / Injury",
+    "Physical Trauma":      "Physical Injury",
+    "Scene Threat":         "Threatening Scene",
+    "Environmental Hazard": "Fire / Smoke",
+    "Content Flag":         "Inappropriate Content",
+    "Clinical Content":     "Medical Scene",
+    "Scene Context":        "Scene Warning",
+    "Text Risk":            "Harmful Text",
 }
 
 BG = "#060b14"
@@ -236,14 +247,15 @@ class AnalyzeView:
         has_sens  = bool(sensitive)
 
         if has_sens:
-            # 🔴 Red — policy violations detected (always takes priority)
+            # 🔴 Red — actual sensitive / harmful content (always takes priority)
             bg, bdr  = "#1a0a0a", "#ef4444"
-            msg      = "⚠️  Policy violation(s) detected"
+            msg      = "⚠️  Sensitive content detected"
             risk_bg  = "#2d0d0d"
             parts    = []
             if has_ai:
                 parts.append(f"AI generation probability: {ai_score:.0f}%")
-            parts.append("Flags: " + ", ".join(sensitive.keys()))
+            flag_names = [CATEGORY_LABEL.get(k, k) for k in sensitive.keys()]
+            parts.append("Found: " + ", ".join(flag_names)) # type: ignore[list-item]
             if reasoning:
                 parts.append(reasoning)
             desc = " | ".join(parts)
@@ -300,9 +312,9 @@ class AnalyzeView:
                          text_color="#64748b").pack(anchor="w", padx=16, pady=(10, 4))
             sr = ctk.CTkFrame(sf, fg_color="transparent")
             sr.pack(fill="x", padx=16, pady=(0, 10))
-            for key, label in [("exif","📋 EXIF"), ("fft","📡 Frequency"),
+            for key, label in [("exif","📋 Camera Info"), ("fft","📡 Frequency"),
                                 ("ela","💾 Compression"), ("noise","🔊 Noise"),
-                                ("ca","🌈 Aberration")]:
+                                ("ca","🌈 Lens Effect")]:
                 val = sig.get(key, 0)
                 col = "#ef4444" if val >= 65 else "#fbbf24" if val >= 45 else "#10b981"
                 ctk.CTkLabel(sr, text=f"{label}\n{val:.0f}%", text_color=col,
@@ -311,7 +323,7 @@ class AnalyzeView:
 
         # ── Sensitive content ─────────────────────────────────────────────────
         if sensitive:
-            ctk.CTkLabel(self._inner, text="⚠️  Policy Violation Details",
+            ctk.CTkLabel(self._inner, text="⚠️  Sensitive Content Detected",
                          font=ctk.CTkFont(size=16, weight="bold"),
                          text_color="#ef4444").pack(anchor="w", pady=(18, 8), padx=2)
             items = list(sensitive.items())
@@ -321,8 +333,9 @@ class AnalyzeView:
                 for j in range(2):
                     if i + j < len(items):
                         cat, info = items[i + j]
+                        display_name = CATEGORY_LABEL.get(cat, cat)
                         self._sensitive_card(row,
-                            f"{CATEGORY_ICON.get(cat, '⚠️')} {cat}",
+                            f"{CATEGORY_ICON.get(cat, '⚠️')} {display_name}",
                             info.get("subcategory", ""),
                             info.get("score", 0.0),
                             info.get("reason", ""))

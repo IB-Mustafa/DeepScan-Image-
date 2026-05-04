@@ -19,6 +19,29 @@ Public API
     { category: { subcategory: str, score: float, reason: str } }
 """
 
+# ── YOLOv8 (object detection) ───────────────────────────────
+try:
+    from ultralytics import YOLO
+    _yolo_model = YOLO("yolov8n.pt")  # lightweight
+    YOLO_OK = True
+    print("[content_detector] ✓ YOLOv8 loaded")
+except Exception as e:
+    print(f"[content_detector] YOLO unavailable: {e}")
+    YOLO_OK = False
+
+# ── OCR (text detection) ────────────────────────────────────
+try:
+    import pytesseract
+    OCR_OK = True
+except:
+    OCR_OK = False
+
+import re
+
+
+
+
+
 import numpy as np
 import _flagged_labels as _FL
 
@@ -85,7 +108,7 @@ def _zone_ratio(mask, y0: int, y1: int) -> float:
 def _has_frontal_face(gray) -> bool:
     try:
         fc = cv2.CascadeClassifier(
-            cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+            cv2.data.haarcascades + "haarcascade_frontalface_default.xml") # type: ignore
         return len(fc.detectMultiScale(gray, 1.1, 4)) > 0
     except Exception:
         return False
@@ -96,7 +119,7 @@ def _get_face_cascade():
     global _face_cascade
     if _face_cascade is None and CV2_OK:
         _face_cascade = cv2.CascadeClassifier(
-            cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+            cv2.data.haarcascades + "haarcascade_frontalface_default.xml") # type: ignore
     return _face_cascade
 
 
@@ -478,6 +501,100 @@ def _detect_fire_smoke(path: str) -> dict:
         return {}
 
 
+
+# =============================================================================
+# LAYER 6 — YOLO OBJECT DETECTION
+# =============================================================================
+def _detect_yolo_objects(path: str) -> dict:
+    if not YOLO_OK:
+        return {}
+
+    try:
+        results = _yolo_model(path)[0]
+        classes = results.names
+
+        detected = []
+        for box in results.boxes:
+            cls_id = int(box.cls[0])
+            conf   = float(box.conf[0])
+            label  = classes[cls_id]
+
+            if conf < 0.30:
+                continue
+
+            detected.append(label)
+
+        # weapon-like objects
+        if any(x in detected for x in ["knife", "gun", "pistol", "rifle", "drugs", "bomb"]):
+            return {
+                "Restricted Item": {
+                    "subcategory": "YOLO Weapon-like Object",
+                    "score": 70.0,
+                    "reason": f"Detected objects: {detected}"
+                }
+            }
+
+        # person context
+        if detected.count("person") >= 2:
+            return {
+                "Scene Context": {
+                    "subcategory": "Multiple Persons Detected",
+                    "score": 40.0,
+                    "reason": "Multiple people in frame — possible interaction"
+                }
+            }
+
+        return {}
+
+    except Exception as e:
+        print(f"[content_detector] YOLO error: {e}")
+        return {}
+    
+    
+    
+    
+def _detect_text_risk(path: str) -> dict:
+    if not OCR_OK:
+        return {}
+
+    try:
+        import cv2
+        img = cv2.imread(path)
+        text = pytesseract.image_to_string(img).lower()
+
+        # simple regex flags (customize)
+        patterns = [
+            r"\bkill\b",
+            r"\bhate\b",
+            r"\bbomb\b",
+            r"\battack\b",
+            r"\bterror\b",
+            r"\bweapon\b",
+            r"\bgun\b",
+            r"\bknife\b",
+            r"\bdrugs\b",
+            r"\bviolence\b",
+        ]
+
+        for p in patterns:
+            if re.search(p, text):
+                return {
+                    "Text Risk": {
+                        "subcategory": "Harmful / Violent Text",
+                        "score": 65.0,
+                        "reason": f"Matched pattern: {p}"
+                    }
+                }
+
+        return {}
+
+    except Exception as e:
+        print(f"[content_detector] OCR error: {e}")
+        return {}
+
+
+
+    
 # =============================================================================
 # PUBLIC API
 # =============================================================================
@@ -494,6 +611,8 @@ def run_content_detection(path: str) -> dict:
         _detect_distress,
         _detect_weapon_in_hand,
         _detect_fire_smoke,
+        _detect_yolo_objects,
+        _detect_text_risk,
     ):
         for cat, info in detector(path).items():
             if cat not in result or info["score"] > result[cat]["score"]:
