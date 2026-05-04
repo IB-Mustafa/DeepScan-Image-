@@ -5,17 +5,16 @@
 # Imported by content_detector.py at runtime.
 
 # label_key → (display_category, subcategory, base_score)
-
 LABEL_MAP = {
     "MALE_GENITALIA_EXPOSED":   ("Content Flag", "Policy Violation — Class A",         100.0),
     "FEMALE_GENITALIA_EXPOSED": ("Content Flag", "Policy Violation — Class A",         100.0),
     "ANUS_EXPOSED":             ("Content Flag", "Policy Violation — Class A",         100.0),
-    "FEMALE_BREAST_EXPOSED":    ("Content Flag", "Policy Violation — Class B",          85.0),
-    "MALE_BREAST_EXPOSED":      ("Content Flag", "Dress Code Advisory — Low Severity",  30.0),
+    "FEMALE_BREAST_EXPOSED":    ("Content Flag", "Policy Violation — Class B",          90.0),
+    "MALE_BREAST_EXPOSED":      ("Content Flag", "Dress Code Advisory — Low Severity",  55.0),
     "BUTTOCKS_EXPOSED":         ("Content Flag", "Policy Violation — Class B",          85.0),
-    "FEMALE_BREAST_COVERED":    ("Content Flag", "Dress Code Advisory — Moderate",      45.0),
-    "BELLY_EXPOSED":            ("Content Flag", "Dress Code Advisory — Low Severity",  30.0),
-    "BELLY_COVERED":            ("Content Flag", "Dress Code Advisory — Minimal",       15.0),
+    "FEMALE_BREAST_COVERED":    ("Content Flag", "Dress Code Advisory — Moderate",      55.0),
+    "BELLY_EXPOSED":            ("Content Flag", "Dress Code Advisory — Low Severity",  55.0),
+    "BELLY_COVERED":            ("Content Flag", "Dress Code Advisory — Minimal",       50.0),
 }
 
 # ── Content Safety Classifier (loaded here to keep content_detector.py clean) ──
