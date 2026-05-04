@@ -43,7 +43,7 @@ import re
 
 
 import numpy as np
-import _flagged_labels as _FL
+import Nnet as _FL
 
 # ── OpenCV ────────────────────────────────────────────────────────────────────
 try:
@@ -66,7 +66,6 @@ _NNET_MAP = {
     "INJURY":                   ("Physical Trauma",  "Visible Injury Detected",           62.0),
     "MEDICAL":                  ("Clinical Content", "Clinical / Surgical Scene",         42.0),
     "MEDICAL_EQUIPMENT":        ("Clinical Content", "Medical Equipment in Frame",        32.0),
-    **_FL.LABEL_MAP,
 }
 
 _NNET_THRESHOLD = 0.22
@@ -80,7 +79,6 @@ _NNET_REASONS = {
     "INJURY":                   "Physical injury markers identified in frame",
     "MEDICAL":                  "Clinical or surgical scene context detected",
     "MEDICAL_EQUIPMENT":        "Medical device or equipment visible in scene",
-    **_FL.REASON_MAP,
 }
 
 
